@@ -1,0 +1,112 @@
+/* Important global styles */
+body{
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    transition-timing-function: ease-in-out;
+    -moz-transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-duration: .2s;
+    -moz-transition-duration: .2s;
+    -webkit-transition-duration: .2s;
+    -o-transition-duration: .2s;
+}
+
+/* font family import */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+h1,h2,h3,p,span,a{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Colour for sub-header and paragraph text */
+
+h2,h3,p,span{
+    color: #013042; 
+}
+
+.header h1{
+    font-size: 3em;
+    font-weight: 600;
+    color: #013444;
+    text-align: center;
+}
+
+/* Responsive images */
+
+ section.cards{
+     background-color: #ececec;
+     /* background-color: #013444; */
+     padding: 80px 0 80px 0;
+ }
+ .image{
+     max-height: 160px;
+     overflow: hidden;
+ }
+ .flex .col img {
+	width: 100%;
+	height: auto;
+}
+
+.flex {
+	display: flex;
+	justify-content: center;
+	width: 1190px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.flex .col {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 366px;
+	/* flex-grow, flex-shrink,flex-basis */
+    margin: 1em;
+    background: #ffffff;
+}
+.flex .col:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.content{
+    padding: 2em;
+}
+
+.flex .col .btn {
+    /* align-self: flex-start; */
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto;
+    padding: 20px;
+    background-color: #2992d0;
+    color: #ffffff;
+}
+.flex .col .btn:hover {
+    background-color: #51b74b;
+}
+
+/* media queries */
+@media (max-width: 900px) {
+	.flex {
+		flex-wrap: wrap;
+	}
+}
+@media (max-width: 1200px) {
+	.flex {
+		width: 1190px;
+	}
+}
+@media (max-width: 992px) {
+	.flex {
+		width: 970px;
+	}
+}
+@media (max-width: 768px) {
+	.flex {
+		width: 750px;
+	}
+}
